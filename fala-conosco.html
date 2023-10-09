@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/formulario.js"></script>
+
+</head>
+
+<body id="corpo">
+    <header id="topo">
+        <span id="burger" class="material-symbols-outlined">
+            menu
+        </span>
+        <nav id="menu">
+            <img id="logo" src="./images/WhatsApp Image 2023-08-14 at 10.00.26_clipdrop-background-removal2.png">
+            <ul class="nav-list">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">SOBRE</a></li>
+                <li><a href="#">SUGESTÕES</a></li>
+                <li><a href="#">FALE CONOSCO</a></li>
+            </ul>
+        </nav>
+        <a class="login-btn" href="./login.html">ENTRAR</a>
+    </header>
+    <main>
+        <div id="meio">
+            
+            <div id="media-info">
+                <form action="mailto:carlosrdorigoinfo@gmail.com" method="post" enctype="text/plain">
+                    <h3>Fale Conosco</h3>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome"><br>
+                    <label for="sobrenome">Sobrenome:
+                        <input type="text" name="sobrenome" id="sobrenome">
+                    </label><br>
+                    <label for="emial">Email:
+                        <input type="email" name="email" id="email">
+                    </label><br><br>
+                    <label for="categoria">Se trata de:</label>
+                    <input type="radio" name="categoria" id="sugestao">Sugestão
+                    <input type="radio" name="categoria" id="critica">Critica
+                    <br>
+                    <label for="texto"></label>
+                    <textarea name="texto" id="texto" cols="50" rows="8"></textarea><br>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./MobileNavbar.js"></script>
+</body>
+
+</html>
