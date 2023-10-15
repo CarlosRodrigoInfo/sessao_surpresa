@@ -17,8 +17,8 @@ body{
     background-color: var(--black);
 }
 form{
-    width: 100%;
-    max-width: 30rem;
+    width: 40vw;
+    
 }
 label, input, textarea, button{
     display: block;
@@ -67,6 +67,18 @@ button:disabled{
     cursor: not-allowed;
     background-color: var(--black);
 }
-h3:hover{
+h1{
+    margin-top: 1rem;
+    text-align: center;
+    box-shadow: var(--red);
+}
+h1:hover{
     color:var(--yellow);
+    text-align: center;
+  }
+
+  @media screen and (max-width: 500px){
+    form{
+        width: 90vw;
+    }
   }

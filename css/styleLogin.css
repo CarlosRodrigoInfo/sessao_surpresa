@@ -1,5 +1,67 @@
-div{
-    width: 500px;
+main{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+h3{
+    font-size: 32px;
+    margin: 0px;
+}
+#formulario{
+    display: flex;
+    background-color: #990000;
+    width: 400px;
     height: 250px;
-    background-color: black;
+    border-radius: 5px;
+    border: 1px solid #D4AF37;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    display:flex;
+    width: 300px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    margin-top: 5px;
+}
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    padding: 20px;
+    cursor: pointer;
+    margin:auto;
+    margin-top: 30px;
+    color: white;
+    background-color: #D4AF37;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px rgb(9, 9, 9, 0.8);
+}
+#social-login{
+    display: flex;
+    justify-content: space-between;
+}
+#social-login .google-login,
+#social-login .facebook-login{
+    display: flex;
+    border-radius: 5px;
+    padding: 2px;
+    width: 150px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+}
+.google-login{
+    background-color: #d50d0d;
+    color: white;
+}
+.facebook-login{
+    background-color: #0060b1;
+    color: white;
 }
