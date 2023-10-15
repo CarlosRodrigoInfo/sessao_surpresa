@@ -40,20 +40,26 @@ const mobileNavbar = new MobileNavbar(
 );
 mobileNavbar.init();
 
+const isAuthenticated = true; // Defina isso com base na autenticação do usuário
+
+if (isAuthenticated) {
+  const profileButton = document.querySelector(".profile-btn");
+  profileButton.style.display = "inline-block"; // Mostrar o botão de perfil
+}
 
 const apiKey = '3ec3e5d091f9c442dc0688774f5594c4';
 const baseUrl = 'https://api.themoviedb.org/3';
 
 let maxTentativas = 25; // Defina o número máximo de tentativas
 let tentativas = 0; // Inicialize o contador de tentativas
-let currentPage = Math.floor(Math.random() * 1000000) + 1; // Gere um número aleatório entre 1 e 10 para a página
+let currentPage = Math.floor(Math.random() * 1000) + 1; // Gere um número aleatório entre 1 e 10 para a página
 
 // Função para buscar filmes ou séries aleatórias com base nos filtros
 function getRandomMedia() {
   // Obtenha os valores dos filtros do formulário
   const category = document.getElementById('cat').value;
   const mediaType = document.getElementById('mv').value;
-  const rating = '5.0'; // Avaliação fixa (você pode alterar conforme necessário)
+  const rating = '6.0'; // Avaliação fixa (você pode alterar conforme necessário)
 
   // Defina o tipo de mídia com base na seleção
   let searchMediaType;
