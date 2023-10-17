@@ -11,8 +11,11 @@
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  
 }
-
+#corpo.white{
+  background-color: whitesmoke;
+}
 #topo {
   background-color: black;
   display: flex;
@@ -124,7 +127,7 @@ nav a:hover:before {
   /* Mostra a largura ao passar o mouse */
 }
 
-
+/* foi alterado de posição para da lugar ao botao tema
 .login-btn {
   display: inline-block;
   background-color: #D4AF37;
@@ -137,25 +140,25 @@ nav a:hover:before {
 .login-btn:hover{
   color:red;
   border: red solid .1rem;
-  
 }
+*/
 
 #filtros {
   padding: 3px;
   display: flex;
   flex-direction: column;
-  margin: 1rem;
-  width: 40vw;
-  height: 20vh;
+  margin: 5px;
+  width: 70vh;
+  height: 18vh;
   background-color: #990101;
-  border-radius: .5rem;
+  border-radius: 5px;
   /*box-shadow: 1px 1px 20px 0px #D4AF37;*/
-  border: .1rem solid #D4AF37;
+  border: 2px solid #D4AF37;
 }
 
 label {
-  margin: .8rem 0  0 1rem;
-  font-size: 1.2em;
+  margin: 3px;
+  font-size: 2vh;
 }
 
 #selec {
@@ -165,6 +168,7 @@ label {
   margin-top: 10px;
   margin-left: 10%;
   justify-content: space-between;
+ 
 }
 
 
@@ -182,7 +186,7 @@ label {
 }
 
 .btn {
-  margin: 5px;
+  margin: .5rem 0;
   background-color: #D4AF37;
   border-radius: 5px;
   width: 10vh;
@@ -244,13 +248,13 @@ label {
 }
 
 #cat, #mv {
-  width: 15vw;
-  height: 4vh;
+  width: 30vh;
+  height: 3.2vh;
   background-color: #090909;
   color: #fff;
-  font-size: 1em;
-  border-radius: .5rem;
-  border: .1rem solid #D4AF37;
+  font-size: 2vh;
+  border-radius: 10px;
+  border: 1px solid #D4AF37;
 }
 
 
@@ -284,11 +288,11 @@ footer {
     position: relative;
     margin-top: auto;
   }
-
+  
   #filtros {
     flex-direction: column;
     align-items: flex-start;
-    width: 90vw;
+    width: 98%;
     height: auto;
     align-items: center;
     justify-content: flex-start;
@@ -314,15 +318,7 @@ footer {
     margin-top: 1vh;
     margin: auto;
   }
-  #cat, #mv {
-    width: 50vw;
-    height: 4vh;
-    background-color: #090909;
-    color: #fff;
-    font-size: 1em;
-    border-radius: .5rem;
-    border: .1rem solid #D4AF37;
-  }
+
   iframe{
     width: 90vw;
   }
