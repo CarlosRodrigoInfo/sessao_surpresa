@@ -43,8 +43,8 @@ mobileNavbar.init();
 const isAuthenticated = true; // Defina isso com base na autenticação do usuário
 
 if (isAuthenticated) {
-  const profileButton = document.querySelector(".profile-btn");
-  profileButton.style.display = "inline-block"; // Mostrar o botão de perfil
+  const loginButton = document.querySelector(".login-btn");
+  loginButton.style.display = "inline-block"; // Mostrar o botão de perfil
 }
 
 const apiKey = '3ec3e5d091f9c442dc0688774f5594c4';
