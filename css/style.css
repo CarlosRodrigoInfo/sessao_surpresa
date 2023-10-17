@@ -128,28 +128,18 @@ nav a:hover:before {
 .login-btn {
   display: inline-block;
   background-color: #D4AF37;
-  margin-right: 5px;
+  margin-right: 1rem;
   padding: 2vh 1.5vh;
   cursor: pointer;
-  border-radius: 3px;
+  border-radius: .5rem;
   text-decoration: none;
 }
-.profile-btn {
-  display: none; 
-  background-color: #D4AF37;
-  color: black;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  margin: 15px;
+.login-btn:hover{
+  color:red;
+  border: red solid .1rem;
+  
 }
 
-.profile-btn:hover {
-  background-color: #D4AF37;
-  color: white;
-  cursor: pointer;
-}
 #filtros {
   padding: 3px;
   display: flex;
@@ -178,12 +168,17 @@ label {
 }
 
 
+
 #botoes {
+  font-size: large;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   margin-top: -17%;
   margin-right: 10%;
+}
+#botoes input:hover{
+  color: red;
 }
 
 .btn {
@@ -198,7 +193,7 @@ label {
 }
 
 #media-info {
-  
+  padding: 1rem;
   width: 70vw;
   min-height: 60vh;
 
@@ -245,7 +240,7 @@ label {
 #meio {
   display: grid;
   place-items: center;
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
 #cat, #mv {
@@ -260,13 +255,15 @@ label {
 
 
 footer {
-  margin-top: 10vh;
+  margin-top: auto;
   background-color: black;
   color: white;
   text-align: center;
   height: 8vh;
   border-radius: 1rem 1rem 0 0;
   width: 100%;
+  position: relative;
+ 
 }
 
 @media screen and (max-width: 500px) {
@@ -280,6 +277,7 @@ footer {
   #meio {
     overflow-y: auto;
     padding: 5px;
+    
   }
 
   footer {
