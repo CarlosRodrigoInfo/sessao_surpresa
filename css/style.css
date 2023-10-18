@@ -215,9 +215,6 @@ label {
   /* Alinhar o texto ao centro horizontalmente */
 
 }
-#media-info iframe{
-  width: 60vh;
-}
 
 #media-info img {
   margin-top: 1rem;
