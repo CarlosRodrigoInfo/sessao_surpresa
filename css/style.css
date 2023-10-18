@@ -25,14 +25,16 @@
   height: 10vh;
   border-radius: 0 0 1rem 1rem;
 }
-
+#topo a{
+  padding: 0;
+  text-decoration: none;
+  margin: auto;
+  align-items: center;
+}
 #logo {
   display: flex;
   width: 9em;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: .3rem auto 0 ;
+  position: relative;
 }
 
 #burger {
@@ -151,7 +153,7 @@ nav a:hover:before {
   width: 70vh;
   height: 18vh;
   background-color: #990101;
-  border-radius: 5px;
+  border-radius: 1em;
   /*box-shadow: 1px 1px 20px 0px #D4AF37;*/
   border: 2px solid #D4AF37;
 }
@@ -182,7 +184,7 @@ label {
   margin-right: 10%;
 }
 #botoes input:hover{
-  color: red;
+  color: black;
 }
 
 .btn {
@@ -197,14 +199,12 @@ label {
 }
 
 #media-info {
-  padding: 1rem;
-  width: 70vw;
+  width: 70vh;
   min-height: 60vh;
-
   background-color: #990101;
   border-radius: 1rem;
   /*box-shadow: 1px 1px 20px 0px #D4AF37;*/
-  border: .1rem solid #D4AF37;
+  border: 2px solid #D4AF37;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -215,13 +215,15 @@ label {
   /* Alinhar o texto ao centro horizontalmente */
 
 }
+#media-info iframe{
+  width: 60vh;
+}
 
 #media-info img {
   margin-top: 1rem;
   height: 40vh;
-  /* Ajuste a altura da imagem conforme necessário */
-  
-  /* Altura ajustada automaticamente para manter a proporção */
+  border-radius:  1em;
+ 
 }
 
 #media-info h2 {
@@ -320,7 +322,7 @@ footer {
   }
 
   iframe{
-    width: 90vw;
+    width: 70vw;
   }
   .nav-list{
     width: 65vw;

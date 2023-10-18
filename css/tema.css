@@ -1,6 +1,7 @@
 .checkbox{
     opacity: 0;
-    position: absolute;
+    float: right;
+    display: none;
 }
 .label{
     margin-right: 1em;
@@ -29,6 +30,8 @@
 }
 .checkbox:checked + .label .ball{
     transform: translateX(2em);
+   
+
 }
 .fa-moon{
     color: yellow;
